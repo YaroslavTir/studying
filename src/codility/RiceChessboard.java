@@ -2,14 +2,37 @@ package codility;
 
 /**
  * @author YMolodkov
- * @since 16.0
+ *        <p/>
+ *        Accepts input from standard input and writes result to standard
+ *        output.
+ *        <p/>
+ *        The first two lines of input will be single numbers that define
+ *        the number of rows and columns. Each subsequent line will
+ *        represent one row of the chessboard, with the number of grains
+ *        of rice in each cell separated by spaces.
+ *        <p/>
+ *        For example the input:
+ *        <p/>
+ *        <pre>
+ *        4 4
+ *        2 2 4 2
+ *        0 3 0 1
+ *        1 2 2 1
+ *        4 1 2 2
+ *        <pre/>
+ *        <p/>
+ *        Should print to standard output:
+ *        <p/>
+ *        15
  */
+
 public class RiceChessboard {
     public static void main(String args[]) {
-        int[][] A = {{2, 2, 3}
-                , {0, 3, 1}
-                , {1, 2, 2}
-                , {4, 1, 2}};
+
+        int[][] A = {{2, 2, 4, 2}
+                , {0, 3, 0, 1}
+                , {1, 2, 2, 1}
+                , {4, 1, 2, 2}};
         RiceChessboard riceChessboard = new RiceChessboard();
         System.out.println(riceChessboard.solution(A));
     }
