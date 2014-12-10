@@ -6,12 +6,6 @@ package vaadin;
  */
 public class Task1 {
 
-    //    public static void main(String[] args) {
-//        int[] ints = splitByNumber(1);
-//        System.out.println(ints);
-//
-//    }
-
     public static void main(String[] args) {
         System.out.println(solution(Integer.MAX_VALUE, Integer.MAX_VALUE)); //152634
     }

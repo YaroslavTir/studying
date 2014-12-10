@@ -9,7 +9,15 @@ public class Task2 {
 
     public static void main(String[] args) {
         System.out.println(solution(1234, 56)); //152634
+        assert solution(1234, 56) == 152634;
         System.out.println(solution(56, 1234)); //516234
+        assert solution(56, 1234) == 516234;
+    }
+
+
+
+    private static int numberLength(int number) {
+        return String.valueOf(number).length();
     }
 
     /**
@@ -27,11 +35,6 @@ public class Task2 {
      * @param B the second input number
      * @return a mix of A and B
      */
-
-    private static int numberLength(int number) {
-        return String.valueOf(number).length();
-    }
-
     private static int solution(int A, int B) {
         int result = 0;
         int lengthA = numberLength(A);
@@ -44,8 +47,7 @@ public class Task2 {
         if (lengthA > lengthB) {
             number1 = (int) (A / Math.pow(10, min));
             number3 = (int) (A % Math.pow(10, min));
-        }
-        if (lengthB > lengthA) {
+        } else if (lengthB > lengthA) {
             number2 = (int) (B / Math.pow(10, min));
             number3 = (int) (B % Math.pow(10, min));
         }
