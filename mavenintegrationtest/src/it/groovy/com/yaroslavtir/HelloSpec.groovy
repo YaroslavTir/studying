@@ -8,7 +8,7 @@ import spock.lang.Specification
  * @author YMolodkov
  * @since 16.0
  */
-class HelloIT extends Specification{
+class HelloSpec extends Specification{
 
     def "check hello"(){
         setup:
